@@ -1,0 +1,6 @@
+ACCEPT hiredatmin date 'DD.MM.YYYY' prompt 'Enter Min hiredate:'
+ACCEPT hiredatmax date 'DD.MM.YYYY' prompt 'Enter Max hiredate:'
+select ename || ', ' || job as EMPLIYEES, hiredate
+from emp
+where hiredate>&hiredamin and hiredate<&hiredatmax
+/

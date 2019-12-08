@@ -1,0 +1,6 @@
+insert into department
+values (dept_id_seq.nextval, 'Education');
+insert into department
+values (dept_id_seq.nextval, 'Administration');
+
+select * from department;

@@ -1,0 +1,9 @@
+declare
+  v_del_dept dept.dname%TYPE := 'Education';
+  BEGIN
+    delete from dept 
+    where dname=v_del_dept;
+    END;
+/ 
+select * from dept;
+commit; 

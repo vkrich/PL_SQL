@@ -1,0 +1,2 @@
+select COUNT(ename) as "TOTAL", COUNT(ename where hiredate like '%1980') as "1980"
+from emp 
